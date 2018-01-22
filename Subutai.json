@@ -4,7 +4,7 @@
   "nodes":[
     {
       "name":"web-apache",
-      "template":"apache@b47933477ca87eacacf0287c0dcc7637a5bbc4df",
+      "template":"abdysamat-apache@b986652a73f7446b7ea9a9ed4c8100e8ef3079f0",
       "peer_group":"free peers",
       "size":"TINY",
       "expose":[
