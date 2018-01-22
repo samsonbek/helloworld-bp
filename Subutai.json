@@ -2,18 +2,20 @@
   "name": "Hello World web page",
   "description": "no need for desc",
   "nodes":[
-    "name":"web-apache",
-    "template":"abdysamat-apache",
-    "peer_group":"free peers",
-    "size":"TINY",
-    "expose":[
-      {
-        "protocol":"http",
-        "domain":"abdisamat.envs.devsubutaihub.com",
-        "port_ext":"80",
-        "port_int":"80"
-      }
-    ]
+    {
+      "name":"web-apache",
+      "template":"abdysamat-apache",
+      "peer_group":"free peers",
+      "size":"TINY",
+      "expose":[
+        {
+          "protocol":"http",
+          "domain":"abdisamat.envs.devsubutaihub.com",
+          "port_ext":"80",
+          "port_int":"80"
+        }
+      ]
+    }
   ],
   "peerGroups":[
     {
@@ -35,8 +37,10 @@
     "playbook": "https://github.com/samsonbek/helloworld-bp/archive/master.zip",
     "script": "main.yml",
     "groups": [
-      "name": "web-group",
-      "nodes_name": [ "web-apache" ]
+      {
+        "name": "web-group",
+        "nodes_name": [ "web-apache" ]
+      }
     ]
   }
 }
