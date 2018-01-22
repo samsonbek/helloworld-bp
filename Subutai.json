@@ -10,7 +10,7 @@
       "expose":[
         {
           "protocol":"http",
-          "domain":"abdisamat.envs.devsubutaihub.com",
+          "domain":"amamutov.envs.devsubutaihub.com",
           "port_ext":"80",
           "port_int":"80"
         }
