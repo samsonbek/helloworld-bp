@@ -1,0 +1,38 @@
+{
+  "name": "Hello World web page",
+  "description": "no need for desc",
+  "nodes":[
+    "name":"web-apache",
+    "template":"abdysamat-apache",
+    "peer_group":"free peers",
+    "size":"TINY",
+    "expose":[
+      {
+        "protocol":"http",
+        "domain":"abdisamat.envs.devsubutaihub.com",
+        "port_ext":"80",
+        "port_int":"80"
+      }
+    ]
+  ],
+  "peerGroups":[
+    {
+      "name": "free peers",
+      "pricingPref": { "maxPrice": "0" }
+    }
+  ],
+  "configuration": {
+    "arguments": [
+      {
+        "name": "htmlFileName",
+        "value": "${filename}"
+      },
+      {
+        "name": "htmlContent",
+        "value": "Hello world! This page was craeted with Subutai blueprint: https://github.com/samsonbek/helloworld-bp/"
+      }
+    ],
+    "playbook": "https://github.com/samsonbek/helloworld-bp/archive/master.zip",
+    "script": "main.yml"
+  }
+}
