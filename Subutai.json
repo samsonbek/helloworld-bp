@@ -33,6 +33,10 @@
       }
     ],
     "playbook": "https://github.com/samsonbek/helloworld-bp/archive/master.zip",
-    "script": "main.yml"
+    "script": "main.yml",
+    "groups": [
+      "name": "web-group",
+      "nodes_name": [ "web-apache" ]
+    ]
   }
 }
