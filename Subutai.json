@@ -31,7 +31,7 @@
       },
       {
         "key": "htmlContent",
-        "value": "Hello world! This page was craeted with Subutai blueprint: https://github.com/samsonbek/helloworld-bp/"
+        "value": "test"
       }
     ],
     "source-url": "https://github.com/samsonbek/helloworld-bp/archive/master.zip",
