@@ -1,7 +1,7 @@
 {
   "name": "Hello World web page",
   "description": "no need for desc",
-  "nodes":[
+  "containers":[
     {
       "name":"web-apache",
       "template":"abdysamat-apache@b986652a73f7446b7ea9a9ed4c8100e8ef3079f0",
