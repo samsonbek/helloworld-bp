@@ -3,43 +3,43 @@
   "description": "no need for desc",
   "containers":[
     {
-      "hostname":"web-apache",
+      "name":"web-apache",
       "template":"abdysamat-apache@b986652a73f7446b7ea9a9ed4c8100e8ef3079f0",
-      "peer-criteria":"free peers",
+      "peer_group":"free peers",
       "size":"TINY",
-      "port-mapping":[
+      "expose":[
         {
           "protocol":"http",
           "domain":"amamutov.envs.devsubutaihub.com",
-          "external-port":"80",
-          "internal-port":"80"
+          "port_ext":"80",
+          "port_int":"80"
         }
       ]
     }
   ],
-  "peer-criteria":[
+  "peerGroups":[
     {
       "name": "free peers",
-      "max-price": "0"
+      "pricingPref": { "maxPrice": "0" }
     }
   ],
   "configuration": {
     "arguments": [
       {
-        "key": "htmlFileName",
+        "name": "htmlFileName",
         "value": "${filename}"
       },
       {
-        "key": "htmlContent",
+        "name": "htmlContent",
         "value": "Hello world! This page was craeted with Subutai blueprint: https://github.com/samsonbek/helloworld-bp/"
       }
     ],
-    "source-url": "https://github.com/samsonbek/helloworld-bp/archive/master.zip",
-    "ansible-playbook": "main.yml",
+    "playbook": "https://github.com/samsonbek/helloworld-bp/archive/master.zip",
+    "script": "main.yml",
     "groups": [
       {
         "name": "web-group",
-        "hostnames": [ "web-apache" ]
+        "nodes_name": [ "web-apache" ]
       }
     ]
   }
