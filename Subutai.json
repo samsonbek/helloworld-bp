@@ -17,6 +17,12 @@
       ]
     }
   ],
+  "peer-criteria":[
+    {
+      "name": "free peers",
+      "max-price": "0"
+    }
+  ],
   "user-variables":
   {
     "envName": {
