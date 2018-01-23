@@ -4,7 +4,7 @@
   "containers":[
     {
       "hostname":"web-apache",
-      "template":"abdysamat-apache",
+      "template":"apache",
       "peer-criteria":"free peers",
       "size":"TINY"
     }
