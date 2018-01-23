@@ -50,5 +50,6 @@
       "type": "string",
       "default": "HelloWWWorld",
       "validation": "[a-zA-Z]+"
+    }
   }
 }
