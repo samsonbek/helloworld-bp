@@ -17,6 +17,7 @@
       ]
     }
   ],
+  "ssh-key": "abdisamat",
   "peer-criteria":[
     {
       "name": "free peers",
