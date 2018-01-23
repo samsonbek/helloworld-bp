@@ -1,5 +1,5 @@
 ---
-- hosts: web
+- hosts: web-group
   tasks:
   - name: create html page
     shell: echo "{{htmlContent}}" >> /var/www/html/{{htmlFileName}}
