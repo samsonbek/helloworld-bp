@@ -4,17 +4,46 @@
   "containers":[
     {
       "hostname":"web-apache",
-      "template":"apache",
+      "template":"abdysamat-apache@b986652a73f7446b7ea9a9ed4c8100e8ef3079f0",
       "peer-criteria":"free peers",
-      "size":"TINY"
+      "size":"TINY",
+      "port-mapping":[
+        {
+          "protocol":"http",
+          "domain":"amamutov.envs.devsubutaihub.com",
+          "external-port":"80",
+          "internal-port":"80"
+        }
+      ]
     }
   ],
+  "ssh-key": "abdisamat",
   "peer-criteria":[
     {
       "name": "free peers",
       "max-price": "0"
     }
   ],
+  "configuration": {
+    "arguments": [
+      {
+        "key": "htmlFileName",
+        "value": "${filename}"
+      },
+      {
+        "key": "htmlContent",
+        "value": "test"
+      }
+    ],
+    "source-url": "https://github.com/samsonbek/helloworld-bp/archive/master.zip",
+    "ansible-playbook": "main.yaml",
+    "groups": [
+      {
+        "name": "web-group",
+        "hostnames": [ "web-apache" ]
+      }
+    ]
+  },
   "user-variables":
   {
     "envName": {
