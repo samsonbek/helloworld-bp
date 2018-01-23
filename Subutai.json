@@ -1,5 +1,5 @@
 {
-  "name": "Hello World web page",
+  "name": "${envName}",
   "description": "no need for desc",
   "containers":[
     {
@@ -42,5 +42,13 @@
         "hostnames": [ "web-apache" ]
       }
     ]
+  },
+  "user-variables":
+  {
+    "envName": {
+      "description": "Enter environment name, must container only letters",
+      "type": "string",
+      "default": "HelloWWWorld",
+      "validation": "[a-zA-Z]+"
   }
 }
