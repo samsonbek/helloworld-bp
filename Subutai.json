@@ -10,7 +10,7 @@
       "port-mapping":[
         {
           "protocol":"http",
-          "domain":"amamutov.envs.devsubutaihub.com",
+          "domain":"amamutov.envs.subutai.cloud",
           "external-port":"80",
           "internal-port":"80"
         }
