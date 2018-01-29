@@ -53,12 +53,12 @@
       "type": "string",
       "default": "HelloWWWorld",
       "validation": "[a-zA-Z]+"
-    },
-    "domain": {
+    }
+  },
+  "skip-domain": {
       "description": "Select your domain or create new one",
       "type": "domain",
       "default": "amamutov.envs.subutai.cloud",
       "validation": "[a-zA-Z0-9.-]+"
     }
-  }
 }
