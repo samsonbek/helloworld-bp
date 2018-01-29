@@ -59,6 +59,6 @@
       "type": "domain",
       "default": "amamutov.envs.subutai.cloud",
       "validation": "[a-zA-Z0-9.-]+"
-    },
+    }
   }
 }
