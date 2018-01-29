@@ -2,7 +2,7 @@
   "name": "${envName}",
   "description": "no need for desc",
   "version": "1.0.0",
-  "author": "github.com/samsonbek"
+  "author": "github.com/samsonbek",
   "containers":[
     {
       "hostname":"web-apache",
