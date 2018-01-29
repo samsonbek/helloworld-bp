@@ -1,6 +1,8 @@
 {
   "name": "${envName}",
   "description": "no need for desc",
+  "version": "1.0.0",
+  "author": "github.com/samsonbek"
   "containers":[
     {
       "hostname":"web-apache",
@@ -10,7 +12,7 @@
       "port-mapping":[
         {
           "protocol":"http",
-          "domain":"amamutov.envs.subutai.cloud",
+          "domain":"${domain}",
           "external-port":"80",
           "internal-port":"80"
         }
@@ -51,6 +53,12 @@
       "type": "string",
       "default": "HelloWWWorld",
       "validation": "[a-zA-Z]+"
-    }
+    },
+    "domain": {
+      "description": "Select your domain or create new one",
+      "type": "domain",
+      "default": "amamutov.envs.subutai.cloud",
+      "validation": "[a-zA-Z0-9.-]+"
+    },
   }
 }
