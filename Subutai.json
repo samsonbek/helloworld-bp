@@ -1,6 +1,6 @@
 {
   "name": "${envName}",
-  "description": "no need for desc",
+  "description": "example static website",
   "version": "1.0.0",
   "author": "github.com/samsonbek",
   "containers":[
@@ -19,15 +19,16 @@
       ]
     }
   ],
-  "skip-ssh-key": "abdisamat",
   "peer-criteria":[
     {
       "name": "free peers",
       "max-price": "0"
     }
   ],
-  "configuration": {
-    "arguments": [
+  "ansible-configuration": {
+    "source-url": "https://github.com/samsonbek/helloworld-bp/archive/master.zip",
+    "ansible-playbook": "main.yaml",
+    "extra-vars": [
       {
         "key": "htmlFileName",
         "value": "${filename}"
@@ -37,8 +38,6 @@
         "value": "test"
       }
     ],
-    "source-url": "https://github.com/samsonbek/helloworld-bp/archive/master.zip",
-    "ansible-playbook": "main.yaml",
     "groups": [
       {
         "name": "web-group",
