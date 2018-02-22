@@ -59,7 +59,7 @@
       "default": "",
       "validation": "[a-zA-Z0-9]+"
     },
-    "fileName": {
+    "filename": {
       "description": "Enter file name",
       "type": "string",
       "default": "HelloWWWorld",
