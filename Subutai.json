@@ -58,6 +58,12 @@
       "type": "domain",
       "default": "",
       "validation": "[a-zA-Z0-9]+"
+    },
+    "filename": {
+      "description": "name of file in apache dir",
+      "type": "string",
+      "default": "about.html",
+      "validation": "[a-zA-Z0-9.]+"
     }
   }
 }
