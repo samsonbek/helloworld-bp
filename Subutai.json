@@ -11,9 +11,9 @@
       "size":"TINY",
       "port-mapping":[
         {
-          "protocol":"tcp",
+          "protocol":"http",
           "domain":"${domainName}",
-          "external-port":"1080",
+          "external-port":"80",
           "internal-port":"80"
         }
       ]
