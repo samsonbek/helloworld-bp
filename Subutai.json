@@ -14,7 +14,8 @@
           "protocol":"https",
           "domain":"${domainName}",
           "external-port":"443",
-          "internal-port":"80"
+          "internal-port":"80",
+          "ssl_cert": "${sslCert}"
         }
       ]
     }
@@ -58,6 +59,10 @@
       "type": "domain",
       "default": "",
       "validation": "[a-zA-Z0-9]+"
+    },
+    "sslCert": {
+      "description": "Upload SSL certificate",
+      "type": "string"
     },
     "filename": {
       "description": "name of file in apache dir",
