@@ -14,8 +14,7 @@
           "protocol":"https",
           "domain":"${domainName}",
           "external-port":"443",
-          "internal-port":"80",
-          "ssl_cert": "${sslCert}"
+          "internal-port":"80"
         }
       ]
     }
