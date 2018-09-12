@@ -35,7 +35,7 @@
       },
       {
         "key": "htmlContent",
-        "value": "test"
+        "value": "${content}"
       }
     ],
     "groups": [
@@ -68,6 +68,11 @@
       "type": "string",
       "default": "info.html",
       "validation": "[a-zA-Z0-9.]+"
+    },
+    "content": {
+      "description": "html file content",
+      "type": "string",
+      "default": "bla bla bla"
     }
   }
 }
