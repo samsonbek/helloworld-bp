@@ -13,7 +13,7 @@
         {
           "protocol":"http",
           "domain":"${domainName}",
-          "external-port":"80",
+          "external-port":"${extPort}",
           "internal-port":"80"
         }
       ]
@@ -64,6 +64,12 @@
       "type": "string",
       "default": "info.html",
       "validation": "[a-zA-Z0-9.]+"
+    },
+    "extPort": {
+      "description": "Please, specify external port",
+      "type": "int",
+      "devault": 80,
+      "validation": "[0-9]+"
     }
   }
 }
